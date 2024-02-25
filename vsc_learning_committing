@@ -1,3 +1,4 @@
 print('Good start for a day!')
 print('and it is getting better!')
 print('I am learning how to use git and github!')
+print("and if this is working, I will be happy!")
