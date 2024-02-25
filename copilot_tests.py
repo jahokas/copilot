@@ -19,4 +19,12 @@ start_date = dt.date(2023, 1, 1)
 end_date = dt.date(2023, 12, 31)
 date_list = [start_date + dt.timedelta(days=random.randint(0, 364)) for i in range(10)]
 df_randoms['Dates'] = date_list
+# remove the columns 'A' and 'B' and 'C' and 'D' from the dataframe
+df_randoms = df_randoms.drop(columns=['A', 'B', 'C', 'D']) 
+# sort the dataframe first by column 'D' in ascending order and then by column 'Dates' in descending order
+df_randoms = df_randoms.sort_values(by=['E', 'Dates'], ascending=[True, False])
+# print the dataframe
 print(df_randoms)
+
+
+
