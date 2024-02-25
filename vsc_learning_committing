@@ -7,3 +7,23 @@ print("This proves I know how to use git and github!")
 def print_hello():
     print('Hello, world!')
 print_hello
+# test the function
+print_hello()
+# create regex to match a phone number in a string format (xxx) xxxxxxxxx
+# import the regex module
+import re
+# create the regex
+phone_regex = re.compile(r'\(\d{3}\) \d{3}\d{4}')
+# test the regex
+# phone_regex.search('My phone number is (358) 4567890')  
+# create a test to see if the regex is working
+test = phone_regex.search('My phone number is (358) 4567890')
+print(test.group())
+# install pandas library
+# import pandas library to work with dataframes
+# create a dataframe
+import pandas as pd
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+# print the dataframe
+print(df)
+
