@@ -3,9 +3,7 @@ print('and it is getting better!')
 print('I am learning how to use git and github!')
 print("and if this is working, I will be happy!")
 print("This proves I know how to use git and github!")
-// q: what does SOLID stand for in software development?
-// a: SOLID is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin.
-// These principles, when combined together, make it easy for a programmer to develop software that are easy to maintain and extend.
-// They also make it easy for developers to avoid code smells, easily refactor code, and are also a part of the agile or adaptive software development.
-// The SOLID acronym stands for:
-// S - Single-responsiblity Principle
+# add a function to the code
+def print_hello():
+    print('Hello, world!')
+print_hello
