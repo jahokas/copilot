@@ -33,4 +33,22 @@ of passing yards in descending order
 """
 for player in sorted(passing_yards, key=passing_yards.get, reverse=True):
     print(player, passing_yards[player])
+    
+""" 
+In the data we just read in, the fourth column is the player
+and the 8th column is the passing yards. Get the sum of 
+yards from column 8 where the 4th column value is
+"Aaron Rodgers"
+"""
+# create a variable to hold the sum of passing yards for Aaron Rodgers
+aaron_rodgers_yards = 0
+# loop through the data
+for row in data:
+    # check if the player is Aaron Rodgers
+    if row[3] == 'Aaron Rodgers':
+        # add the passing yards to the sum
+        aaron_rodgers_yards += int(row[7])
+# print the sum of passing yards for Aaron Rodgers
+print(f"Aaron rodger's yards: {aaron_rodgers_yards}")
+
 
